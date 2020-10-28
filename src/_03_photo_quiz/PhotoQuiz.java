@@ -4,6 +4,7 @@ package _03_photo_quiz;
  *    Level 1
  */
 
+
 import java.awt.Component;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -28,6 +29,82 @@ public class PhotoQuiz {
 		// “Copy Image Address”)
 
 		// 2. create a variable of type "Component" that will hold your image
+Component com;
+com=createImage("https://i.kym-cdn.com/photos/images/original/001/316/888/f81.jpeg");
+quizWindow.add(com);
+quizWindow.pack();
+
+String input=JOptionPane.showInputDialog("What animal is going to die in this photo?");
+if(input.equals("The goldfish")) {
+	System.out.println("CORRECT");
+	JOptionPane.showMessageDialog(null, "Yes, that is correct");
+}
+else if(input.equals("the goldfish")) {
+	System.out.println("CORRECT");
+	JOptionPane.showMessageDialog(null, "Yes, that is correct");
+}
+else if(input.equals("goldfish")) {
+	System.out.println("CORRECT");
+	JOptionPane.showMessageDialog(null, "Yes, that is correct");
+}
+else if(input.equals("Goldfish")) {
+	System.out.println("CORRECT");
+	JOptionPane.showMessageDialog(null, "Yes, that is correct");
+}
+else if(input.equals("thy smol goldie")) {
+	System.out.println("CORRECT");
+	JOptionPane.showMessageDialog(null, "Yes, that is correct");
+}
+
+else if(input.equals("The woman")) {
+	System.out.println("INCORRECT");
+	JOptionPane.showMessageDialog(null, "Sorry, that is not correct");
+}
+else if(input.equals("the woman")) {
+	System.out.println("INCORRECT");
+	JOptionPane.showMessageDialog(null, "Sorry, that is not correct");
+}
+else if(input.equals("woman")) {
+	System.out.println("INCORRECT");
+	JOptionPane.showMessageDialog(null, "Sorry, that is not correct");
+}
+else{
+	System.out.println("INCORRECT");
+	JOptionPane.showMessageDialog(null, "Sorry, that is not correct");
+}
+
+Component comp;
+comp=createImage("https://i.pinimg.com/originals/63/ac/10/63ac107caeebda2a798c90996564c4cf.png" );
+quizWindow.add(comp);
+quizWindow.pack();
+
+String cactus=JOptionPane.showInputDialog("What is this child hugging?");
+if(cactus.equals("a cactus")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+else if(cactus.equals("A cactus")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+else if(cactus.equals("A Cactus")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+else if(cactus.equals("A cacti")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+else if(cactus.equals("A Cacti")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+else if(cactus.equals("a cacti")) {
+	JOptionPane.showMessageDialog(null, "That is correct!");
+}
+
+else {
+	JOptionPane.showMessageDialog(null, "That is not correct!");
+}
+
+
+
+
 
 		// 3. use the "createImage()" method below to initialize your Component
 

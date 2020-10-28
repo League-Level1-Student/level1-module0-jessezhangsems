@@ -36,6 +36,8 @@ frame.add(panel);
 panel.add(label);
 frame.pack();
 
+label.setIcon(loadImage());
+frame.pack();
 		// 9. Add the JLabel object to the JPanel
 
 		// 10. Pack your JFrame
