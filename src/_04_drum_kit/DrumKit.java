@@ -31,11 +31,11 @@ frame.setSize(1000,1000);
 frame.setTitle("Drum Kit Java Runner");
 JPanel panel=new JPanel();
 frame.add(panel);
-drumLabelWithImage = createLabelImage("");
-
-
-
-
+drumLabelWithImage = createLabelImage("cymbal.jpg");
+panel.add(drumLabelWithImage);
+panel.setLayout(new GridLayout());
+frame.pack();
+drumLabelWithImage.addMouseListener(this);
 
 
 
@@ -79,7 +79,7 @@ drumLabelWithImage = createLabelImage("");
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
 		// the console to see when this is printed.
-
+System.out.println("OOOHHHHHH DRRUMMMSSSSZZZ");
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
 														// that the mouse
 														// clicked on
