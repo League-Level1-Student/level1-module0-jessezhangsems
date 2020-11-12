@@ -59,11 +59,43 @@ int score=0;
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
-		String guess = JOptionPane.showInputDialog("Who is this celery?");
+		String guess = JOptionPane.showInputDialog("Who is this celebrity?");
 		if(guess.equals("Arnold")) {
-			JOptionPane.showMessageDialog(null, "Yes, that's right.");
+			JOptionPane.showMessageDialog(null, "Affirmative, your refutation is equitable. ");
 				  score ++;
+				  JOptionPane.showMessageDialog(null, "You have received a singular count in your score.");
 		}
+		else if(guess.equals("Arnold Schwarzenegger")) {
+			JOptionPane.showMessageDialog(null, "Affirmative, your refutation is equitable.");
+			score ++;
+			JOptionPane.showMessageDialog(null, "You have received a singular count in your score.");
+		}
+		else {
+			JOptionPane.showMessageDialog(null,"I am apologetic, that input is counterfactual.");
+		}
+		
+		
+		
+		 guess=JOptionPane.showInputDialog("Who is this celebrity?");
+		 if(guess.equals("Leonardo")) {
+			 JOptionPane.showMessageDialog(null, "Unquestionably, your justification is appropriate.");
+		 score++;
+		 JOptionPane.showMessageDialog(null, "Felicitations, you have undoubtably elevated your record. ");
+		 }
+		 if(guess.equals("Leonardo DiCaprio")) {
+			 JOptionPane.showMessageDialog(null, "Unquestionably, your justification is appropriate.");
+		score++;
+		JOptionPane.showMessageDialog(null, "Felicitations, you have undoubtably elevated your record. ");
+		 }
+		 else {
+			 JOptionPane.showMessageDialog(null, "Sorry but that's incorrect." );
+		 }
+		 
+		 
+		 guess=JOptionPane.showInputDialog("Who is this celebrity?");
+		 if(guess.equals("Morgan")) {
+			 JOptionPane.showMessageDialog(null, "Yes, that is very correct.");
+		 }
 	// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
 
